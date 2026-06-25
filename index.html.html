@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Messi Afdal — Performance-Driven Manager &amp; Solution Driver</title>
+<meta name="description" content="Stratégie, développement commercial et transformation. Bâtisseur d'activités, architecte de redressements.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400&family=Space+Mono:wght@400;700&family=Manrope:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --noir:#080807;--noir-2:#0f0e0c;--noir-3:#16140f;
+  --gold:#c9a24b;--gold-bright:#e6c478;
+  --bleu:#4ea8ff;--ivory:#f4efe4;--ash:#a39e92;--ash-dim:#6b665c;
+  --line:rgba(201,162,75,.18);--line-soft:rgba(244,239,228,.07);
+  --serif:'Fraunces',Georgia,serif;--sans:'Manrope',sans-serif;--mono:'Space Mono',monospace;
+  --maxw:1180px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{background:var(--noir);color:var(--ivory);font-family:var(--sans);font-weight:300;line-height:1.65;overflow-x:hidden;-webkit-font-smoothing:antialiased}
+body::before{content:"";position:fixed;inset:0;z-index:0;pointer-events:none;background:radial-gradient(ellipse 60% 40% at 75% 0%,rgba(78,168,255,.07),transparent 70%),radial-gradient(ellipse 50% 50% at 10% 80%,rgba(201,162,75,.05),transparent 70%)}
+body::after{content:"";position:fixed;inset:0;z-index:1;pointer-events:none;opacity:.035;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='120'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='2'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E")}
+.wrap{max-width:var(--maxw);margin:0 auto;padding:0 32px;position:relative;z-index:2}
+::selection{background:var(--gold);color:var(--noir)}
+a{color:inherit;text-decoration:none}
+
+.topbar{position:fixed;top:0;left:0;right:0;z-index:60;transition:all .4s}
+.topbar.scrolled{backdrop-filter:blur(14px);background:rgba(8,8,7,.8);border-bottom:1px solid var(--line-soft)}
+.topbar .wrap{display:flex;align-items:center;justify-content:space-between;height:74px}
+.brandmark{font-family:var(--mono);font-size:12px;letter-spacing:.28em;color:var(--ivory)}
+.brandmark b{color:var(--gold);font-weight:400}
+.nav-right{display:flex;align-items:center;gap:26px}
+.nav-links{display:flex;gap:26px}
+.nav-links a{font-size:13px;color:var(--ash);transition:color .25s;letter-spacing:.02em;position:relative}
+.nav-links a::after{content:"";position:absolute;left:0;bottom:-5px;width:0;height:1px;background:var(--gold);transition:width .3s}
+.nav-links a:hover{color:var(--gold)}.nav-links a:hover::after{width:100%}
+.lang-toggle{display:flex;gap:2px;font-family:var(--mono);align-items:center}
+.lang-toggle button{background:transparent;border:0;color:var(--ash-dim);padding:4px 8px;font-size:12px;cursor:pointer;font-family:var(--mono);transition:color .25s;letter-spacing:.05em}
+.lang-toggle button.active{color:var(--gold)}
+.lang-toggle .sep{color:var(--ash-dim);font-size:11px}
+.nav-contact{font-family:var(--mono);font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:var(--noir);background:var(--gold);padding:9px 16px;transition:all .3s;white-space:nowrap}
+.nav-contact:hover{background:var(--gold-bright);transform:translateY(-1px)}
+@media(max-width:720px){.nav-links{display:none}}
+@media(max-width:480px){.nav-contact{display:none}}
+
+.hero{min-height:100vh;display:flex;align-items:center;padding:120px 0 60px}
+.hero-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:60px;align-items:center;width:100%}
+@media(max-width:900px){.hero-grid{grid-template-columns:1fr;gap:40px}}
+.eyebrow{font-family:var(--mono);font-size:11px;letter-spacing:.34em;text-transform:uppercase;color:var(--gold);margin-bottom:34px;display:flex;align-items:center;gap:14px}
+.eyebrow::before{content:"";width:42px;height:1px;background:var(--gold)}
+.hero h1{font-family:var(--serif);font-weight:300;font-size:clamp(54px,9vw,108px);line-height:.92;letter-spacing:-.02em;margin-bottom:20px}
+.hero h1 em{font-style:italic;color:var(--gold)}
+.hero .role{font-family:var(--mono);font-size:clamp(12px,1.6vw,15px);color:var(--ash);letter-spacing:.08em;margin-bottom:34px;text-transform:uppercase}
+.hero .lede{font-size:clamp(17px,2.2vw,21px);color:var(--ivory);max-width:560px;line-height:1.55;margin-bottom:44px;font-weight:300}
+.hero .lede strong{color:var(--gold-bright);font-weight:500}
+.hero-cta{display:flex;gap:18px;flex-wrap:wrap}
+.btn{font-family:var(--mono);font-size:12px;letter-spacing:.06em;padding:15px 26px;display:inline-flex;align-items:center;gap:10px;transition:all .3s;cursor:pointer;border:1px solid transparent;text-transform:uppercase}
+.btn svg{width:14px;height:14px}
+.btn-primary{background:var(--gold);color:var(--noir);font-weight:700}
+.btn-primary:hover{background:var(--gold-bright);transform:translateY(-2px);box-shadow:0 10px 30px -10px rgba(201,162,75,.5)}
+.btn-ghost{border-color:var(--line);color:var(--ash)}
+.btn-ghost:hover{border-color:var(--gold);color:var(--gold)}
+
+.hero-card{border:1px solid var(--line);background:linear-gradient(160deg,var(--noir-2),var(--noir));padding:34px 30px;position:relative}
+.hero-card::before{content:"";position:absolute;top:-1px;left:-1px;width:40px;height:40px;border-top:2px solid var(--gold);border-left:2px solid var(--gold)}
+.hero-card::after{content:"";position:absolute;bottom:-1px;right:-1px;width:40px;height:40px;border-bottom:2px solid var(--gold);border-right:2px solid var(--gold)}
+.hero-card .hc-label{font-family:var(--mono);font-size:10px;letter-spacing:.2em;color:var(--ash-dim);text-transform:uppercase;margin-bottom:22px}
+.hc-row{display:flex;justify-content:space-between;align-items:baseline;padding:15px 0;border-top:1px solid var(--line-soft)}
+.hc-row:first-of-type{border-top:0}
+.hc-row .k{font-size:13px;color:var(--ash)}
+.hc-row .v{font-family:var(--mono);font-size:19px;color:var(--gold-bright);font-weight:700}
+.hc-row .v small{font-size:11px;color:var(--ash-dim);font-weight:400}
+
+.section{padding:120px 0;position:relative}
+.sec-head{display:flex;align-items:flex-start;gap:30px;margin-bottom:70px;max-width:860px}
+.sec-num{font-family:var(--serif);font-size:clamp(40px,6vw,72px);font-weight:300;color:transparent;-webkit-text-stroke:1px var(--gold);line-height:.8;flex-shrink:0;opacity:.85}
+.sec-head-txt .sec-tag{font-family:var(--mono);font-size:11px;letter-spacing:.24em;text-transform:uppercase;color:var(--gold);margin-bottom:18px}
+.sec-head-txt h2{font-family:var(--serif);font-weight:300;font-size:clamp(30px,4.5vw,48px);letter-spacing:-.015em;line-height:1.08}
+.sec-head-txt h2 em{font-style:italic;color:var(--gold)}
+.sec-head-txt p{color:var(--ash);margin-top:18px;font-size:16px;max-width:600px}
+
+.proof{border:1px solid var(--line-soft);background:linear-gradient(180deg,var(--noir-2),rgba(15,14,12,.4));margin-bottom:34px;position:relative;transition:border-color .4s}
+.proof:hover{border-color:var(--line)}
+.proof-inner{padding:46px 46px}
+@media(max-width:680px){.proof-inner{padding:32px 26px}}
+.proof-top{display:flex;align-items:baseline;justify-content:space-between;gap:20px;margin-bottom:18px;flex-wrap:wrap}
+.proof-role{font-family:var(--mono);font-size:11px;letter-spacing:.2em;text-transform:uppercase;color:var(--gold)}
+.proof-period{font-family:var(--mono);font-size:11px;color:var(--ash-dim);letter-spacing:.04em}
+.proof h3{font-family:var(--serif);font-size:clamp(26px,3.4vw,38px);font-weight:300;letter-spacing:-.01em;line-height:1.1;margin-bottom:8px}
+.proof h3 em{font-style:italic;color:var(--gold)}
+.proof .sub{font-family:var(--mono);font-size:12px;color:var(--bleu);letter-spacing:.05em;margin-bottom:22px}
+.proof .desc{color:var(--ash);font-size:15.5px;max-width:680px;margin-bottom:30px;line-height:1.7}
+.proof .desc strong{color:var(--ivory);font-weight:500}
+
+.worklist{display:grid;grid-template-columns:1fr 1fr;gap:1px;background:var(--line-soft);border:1px solid var(--line-soft);margin-bottom:34px}
+@media(max-width:680px){.worklist{grid-template-columns:1fr}}
+.work-item{background:var(--noir-2);padding:24px 24px}
+.work-item .wi-tag{font-family:var(--mono);font-size:10px;letter-spacing:.16em;text-transform:uppercase;color:var(--gold);margin-bottom:10px}
+.work-item h5{font-family:var(--serif);font-size:18px;font-weight:400;margin-bottom:8px;line-height:1.25}
+.work-item p{font-size:13.5px;color:var(--ash);line-height:1.6}
+
+.proof-metrics{display:flex;gap:46px;flex-wrap:wrap;padding-top:30px;border-top:1px solid var(--line-soft)}
+.metric .v{font-family:var(--serif);font-size:clamp(28px,4vw,40px);font-weight:300;color:var(--gold-bright);letter-spacing:-.01em;line-height:1}
+.metric .v .u{font-size:.45em;color:var(--ash);font-family:var(--mono);margin-left:4px;letter-spacing:0}
+.metric .k{font-size:11px;color:var(--ash-dim);margin-top:10px;text-transform:uppercase;letter-spacing:.1em}
+
+.chart-block{padding:0 46px 46px}
+@media(max-width:680px){.chart-block{padding:0 20px 30px}}
+.chart-frame{border:1px solid var(--line-soft);background:radial-gradient(ellipse at 80% 30%,rgba(78,168,255,.06),transparent 60%),var(--noir);padding:30px 26px 16px;position:relative;overflow:hidden}
+.chart-cap{display:flex;justify-content:space-between;align-items:center;margin-bottom:20px;flex-wrap:wrap;gap:8px}
+.chart-cap .ct{font-family:var(--mono);font-size:10px;letter-spacing:.16em;text-transform:uppercase;color:var(--ash-dim)}
+.chart-cap .ctr{font-family:var(--mono);font-size:11px;color:var(--gold);letter-spacing:.06em}
+svg.signal{width:100%;height:auto;display:block;overflow:visible}
+.s-path{fill:none;stroke:var(--bleu);stroke-width:2;stroke-linecap:round;stroke-linejoin:round;filter:drop-shadow(0 0 6px rgba(78,168,255,.6))}
+.s-area{fill:url(#sfade);opacity:.2}
+.s-dot{fill:var(--noir);stroke:var(--bleu);stroke-width:2}
+.s-dot-last{fill:var(--gold);stroke:var(--gold-bright);stroke-width:2;filter:drop-shadow(0 0 8px rgba(201,162,75,.8))}
+.s-grid{stroke:var(--line-soft);stroke-width:1}
+.s-lab{font-family:var(--mono);font-size:10px;fill:var(--ash-dim)}
+.s-val{font-family:var(--mono);font-size:11px;fill:var(--ivory);font-weight:700}
+.s-val-last{fill:var(--gold-bright)}
+.chart-foot{font-family:var(--mono);font-size:10.5px;color:var(--ash-dim);margin-top:14px;letter-spacing:.04em;line-height:1.6}
+.chart-foot b{color:var(--bleu);font-weight:400}
+
+.skill-cols{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--line-soft);border:1px solid var(--line-soft)}
+@media(max-width:860px){.skill-cols{grid-template-columns:1fr}}
+.skill-col{background:var(--noir-2);padding:36px 32px;transition:background .4s}
+.skill-col:hover{background:var(--noir-3)}
+.skill-col .ci{font-family:var(--serif);font-size:15px;font-style:italic;color:var(--gold)}
+.skill-col h4{font-family:var(--serif);font-size:21px;font-weight:400;margin:14px 0 24px;letter-spacing:-.01em;line-height:1.2}
+.skill-col ul{list-style:none}
+.skill-col li{font-size:14px;color:var(--ash);padding:11px 0;border-top:1px solid var(--line-soft);display:flex;gap:12px;line-height:1.5}
+.skill-col li:first-child{border-top:0}
+.skill-col li::before{content:"—";color:var(--gold);flex-shrink:0}
+
+.cred{border:1px solid var(--line);background:linear-gradient(135deg,rgba(201,162,75,.06),transparent 60%);padding:48px 46px;display:flex;align-items:center;gap:36px;flex-wrap:wrap}
+@media(max-width:680px){.cred{padding:34px 26px}}
+.cred .seal{font-family:var(--mono);font-size:10px;letter-spacing:.2em;text-transform:uppercase;color:var(--gold);border:1px solid var(--line);padding:9px 15px;white-space:nowrap}
+.cred .ctxt{flex:1;min-width:280px}
+.cred h4{font-family:var(--serif);font-size:25px;font-weight:300;margin-bottom:10px}
+.cred h4 em{font-style:italic;color:var(--gold)}
+.cred p{color:var(--ash);font-size:15px;line-height:1.7}
+
+.contact{text-align:center;padding:130px 0 90px}
+.contact .ce{font-family:var(--mono);font-size:11px;letter-spacing:.3em;text-transform:uppercase;color:var(--gold);margin-bottom:28px}
+.contact h2{font-family:var(--serif);font-size:clamp(38px,7vw,76px);font-weight:300;letter-spacing:-.02em;line-height:1;margin-bottom:26px}
+.contact h2 em{font-style:italic;color:var(--gold)}
+.contact p{color:var(--ash);max-width:500px;margin:0 auto 44px;font-size:17px}
+.contact-cta{display:flex;gap:18px;justify-content:center;flex-wrap:wrap}
+
+footer{border-top:1px solid var(--line-soft);padding:38px 0}
+footer .wrap{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:16px}
+footer .sig{font-family:var(--mono);font-size:11px;color:var(--ash-dim);letter-spacing:.04em}
+footer .sig b{color:var(--gold);font-weight:400}
+
+/* CONVERSION BANNER */
+.convert{border:1px solid var(--line);background:linear-gradient(120deg,rgba(201,162,75,.08),transparent 70%);padding:42px 46px;margin-bottom:34px;display:flex;align-items:center;justify-content:space-between;gap:30px;flex-wrap:wrap}
+@media(max-width:680px){.convert{padding:32px 26px}}
+.convert .ctxt{flex:1;min-width:260px}
+.convert h4{font-family:var(--serif);font-size:clamp(22px,3vw,28px);font-weight:300;line-height:1.15;margin-bottom:8px}
+.convert h4 em{font-style:italic;color:var(--gold)}
+.convert p{color:var(--ash);font-size:14.5px}
+.convert .cbtns{display:flex;gap:14px;flex-wrap:wrap}
+
+/* CREATIVE STRIP */
+.creative-row{display:grid;grid-template-columns:1fr 1fr;gap:1px;background:var(--line-soft);border:1px solid var(--line-soft);margin-top:34px}
+@media(max-width:760px){.creative-row{grid-template-columns:1fr}}
+.creative-cell{background:var(--noir-2);padding:38px 34px;position:relative;transition:background .4s}
+.creative-cell:hover{background:var(--noir-3)}
+.creative-cell .cc-tag{font-family:var(--mono);font-size:10px;letter-spacing:.18em;text-transform:uppercase;color:var(--bleu);margin-bottom:16px;display:flex;align-items:center;gap:10px}
+.creative-cell .cc-tag::before{content:"";width:24px;height:1px;background:var(--bleu)}
+.creative-cell h4{font-family:var(--serif);font-size:23px;font-weight:300;line-height:1.2;margin-bottom:12px}
+.creative-cell h4 em{font-style:italic;color:var(--gold)}
+.creative-cell p{color:var(--ash);font-size:14.5px;line-height:1.7}
+.creative-cell p strong{color:var(--ivory);font-weight:500}
+/* evolutive branding visual chips */
+.brand-evo{display:flex;align-items:center;gap:10px;margin-top:22px;flex-wrap:wrap}
+.evo-chip{font-family:var(--mono);font-size:10px;letter-spacing:.08em;color:var(--gold);border:1px solid var(--line);padding:6px 11px;border-radius:2px}
+.evo-arrow{color:var(--ash-dim);font-size:13px}
+
+.reveal{opacity:0;transform:translateY(30px);transition:opacity .9s cubic-bezier(.2,.7,.2,1),transform .9s cubic-bezier(.2,.7,.2,1)}
+.reveal.in{opacity:1;transform:none}
+@media(prefers-reduced-motion:reduce){.reveal{opacity:1;transform:none;transition:none}html{scroll-behavior:auto}}
+
+[data-en]{display:none}
+body.en [data-fr]{display:none}
+body.en [data-en]{display:revert}
+</style>
+</head>
+<body>
+
+<div class="topbar" id="topbar">
+  <div class="wrap">
+    <div class="brandmark">MESSI&nbsp;<b>AFDAL</b></div>
+    <div class="nav-right">
+      <nav class="nav-links">
+        <a href="#proof" data-fr>Réalisations</a><a href="#proof" data-en>Work</a>
+        <a href="#skills" data-fr>Expertise</a><a href="#skills" data-en>Expertise</a>
+        <a href="#contact" data-fr>Contact</a><a href="#contact" data-en>Contact</a>
+      </nav>
+      <div class="lang-toggle">
+        <button id="btn-fr" class="active" onclick="setLang('fr')">FR</button>
+        <span class="sep">/</span>
+        <button id="btn-en" onclick="setLang('en')">EN</button>
+      </div>
+      <a class="nav-contact" href="#contact" data-fr>Me contacter</a>
+      <a class="nav-contact" href="#contact" data-en>Contact me</a>
+    </div>
+  </div>
+</div>
+
+<header class="hero">
+  <div class="wrap">
+    <div class="hero-grid">
+      <div class="reveal in">
+        <div class="eyebrow" data-fr>Stratégie · Développement · Transformation</div>
+        <div class="eyebrow" data-en>Strategy · Growth · Transformation</div>
+        <h1 data-fr>Messi <em>Afdal</em></h1>
+        <h1 data-en>Messi <em>Afdal</em></h1>
+        <div class="role">Performance-Driven Manager &amp; Solution Driver</div>
+        <p class="lede" data-fr>Plus de <strong>sept ans</strong> à l'intersection de la stratégie, des opérations et du développement commercial. Je ne dirige pas des fonctions — je résous des problèmes d'entreprise. Bâtisseur d'une agence, architecte de systèmes commerciaux, pilote de redressements. Mesuré par les résultats, jamais par les intentions.</p>
+        <p class="lede" data-en>Over <strong>seven years</strong> at the intersection of strategy, operations and business development. I don't run functions — I solve business problems. Builder of an agency, architect of commercial systems, turnaround lead. Measured by results, never by intentions.</p>
+        <div class="hero-cta">
+          <a class="btn btn-primary" href="#contact" data-fr>Échangeons
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+          <a class="btn btn-primary" href="#contact" data-en>Let's talk
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+          <a class="btn btn-ghost" href="#proof" data-fr>Le parcours</a>
+          <a class="btn btn-ghost" href="#proof" data-en>The record</a>
+        </div>
+      </div>
+      <div class="hero-card reveal in">
+        <div class="hc-label" data-fr>// Synthèse de performance</div>
+        <div class="hc-label" data-en>// Performance summary</div>
+        <div class="hc-row"><span class="k" data-fr>Expérience</span><span class="k" data-en>Experience</span><span class="v">7 <small data-fr>ans</small><small data-en>yrs</small></span></div>
+        <div class="hc-row"><span class="k" data-fr>Agence dirigée</span><span class="k" data-en>Agency led</span><span class="v">5 <small data-fr>ans</small><small data-en>yrs</small></span></div>
+        <div class="hc-row"><span class="k" data-fr>Trajectoire CA</span><span class="k" data-en>Revenue trajectory</span><span class="v">×58</span></div>
+        <div class="hc-row"><span class="k" data-fr>Marge regagnée</span><span class="k" data-en>Margin recovered</span><span class="v">+22%</span></div>
+        <div class="hc-row"><span class="k" data-fr>Remboursements</span><span class="k" data-en>Refunds cut</span><span class="v">−30%</span></div>
+        <div class="hc-row"><span class="k" data-fr>Mandat national</span><span class="k" data-en>National mandate</span><span class="v" style="font-size:14px">MINEPAT</span></div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<section class="section" id="proof">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <div class="sec-num">01</div>
+      <div class="sec-head-txt">
+        <div class="sec-tag" data-fr>Le parcours, en preuves</div><div class="sec-tag" data-en>The record, in proof</div>
+        <h2 data-fr>Bâtir. Diriger. Redresser. <em>Conseiller.</em></h2>
+        <h2 data-en>Build. Lead. Turn around. <em>Advise.</em></h2>
+        <p data-fr>Sept ans, plusieurs rôles, une même logique : créer de la valeur que l'on peut mesurer. Chaque mission a laissé un chiffre — et une trace — derrière elle.</p>
+        <p data-en>Seven years, several roles, one logic: creating value you can measure. Each engagement left a number — and a mark — behind it.</p>
+      </div>
+    </div>
+
+    <article class="proof reveal">
+      <div class="proof-inner">
+        <div class="proof-top">
+          <span class="proof-role" data-fr>Le Bâtisseur</span><span class="proof-role" data-en>The Builder</span>
+          <span class="proof-period">Fév. 2020 — Mars 2025 · 5 ans</span>
+        </div>
+        <h3 data-fr>ICMA <em>Digital Event</em></h3>
+        <h3 data-en>ICMA <em>Digital Event</em></h3>
+        <div class="sub" data-fr>Agence 360° — Acquisition digitale · Tech · Événementiel · Fondateur &amp; DG</div>
+        <div class="sub" data-en>360° agency — Digital acquisition · Tech · Events · Founder &amp; CEO</div>
+        <p class="desc" data-fr>L'agence que j'ai <strong>créée et dirigée de bout en bout</strong> durant cinq ans, à la croisée de l'acquisition digitale, du développement technologique et de la promotion événementielle, au service d'un portefeuille multisecteurs fidélisé. Réalisations marquantes : conception et livraison d'une <strong>plateforme PropTech de garantie locative</strong> pour une startup française ; campagnes publicitaires payantes et tunnels de conversion ; structuration des process de planification et de revue de performance.</p>
+        <p class="desc" data-en>The agency I <strong>founded and ran end-to-end</strong> for five years, at the crossroads of digital acquisition, technology development and event promotion, serving a loyal multi-sector portfolio. Highlights: designed and delivered a <strong>PropTech rental-guarantee platform</strong> for a French startup; paid ad campaigns and conversion funnels; structured planning and performance-review processes.</p>
+
+        <div class="worklist">
+          <div class="work-item">
+            <div class="wi-tag" data-fr>PropTech</div><div class="wi-tag" data-en>PropTech</div>
+            <h5 data-fr>Plateforme de garantie locative</h5><h5 data-en>Rental-guarantee platform</h5>
+            <p data-fr>Conception et livraison, pour une startup française, d'une application de mise en relation locataires–propriétaires, intégrant des mécanismes de sécurisation juridique de la relation locative.</p>
+            <p data-en>Designed and delivered, for a French startup, a tenant–landlord matching app with built-in mechanisms to legally secure the rental relationship.</p>
+          </div>
+          <div class="work-item">
+            <div class="wi-tag" data-fr>Performance</div><div class="wi-tag" data-en>Performance</div>
+            <h5 data-fr>Acquisition payante &amp; tunnels de conversion</h5><h5 data-en>Paid acquisition &amp; conversion funnels</h5>
+            <p data-fr>Exécution de campagnes publicitaires payantes (Meta, Google) et construction de tunnels de conversion pour l'acquisition client, avec revue de performance structurée et formation des équipes et clients.</p>
+            <p data-en>Ran paid ad campaigns (Meta, Google) and built conversion funnels for client acquisition, with structured performance review and training for teams and clients.</p>
+          </div>
+        </div>
+
+        <p class="desc" data-fr>Au-delà des missions, j'ai conçu et fait vivre le <strong>branding de l'agence comme un système évolutif</strong> — une identité qui s'est transformée au rythme de la croissance, plutôt qu'un logo figé. La marque comme actif vivant, pas comme décor.</p>
+        <p class="desc" data-en>Beyond client work, I designed and grew the <strong>agency's brand as an evolving system</strong> — an identity that transformed in step with growth, rather than a frozen logo. Brand as a living asset, not decoration.</p>
+        <div class="brand-evo">
+          <span class="evo-chip" data-fr>Lancement</span><span class="evo-chip" data-en>Launch</span>
+          <span class="evo-arrow">→</span>
+          <span class="evo-chip" data-fr>Montée en gamme</span><span class="evo-chip" data-en>Premium shift</span>
+          <span class="evo-arrow">→</span>
+          <span class="evo-chip" data-fr>Maturité 360°</span><span class="evo-chip" data-en>360° maturity</span>
+        </div>
+      </div>
+
+      <div class="chart-block">
+        <div class="chart-frame">
+          <div class="chart-cap">
+            <span class="ct" data-fr>Chiffre d'affaires · FCFA · Exercices 1 → 5</span>
+            <span class="ct" data-en>Revenue · XAF · Years 1 → 5</span>
+            <span class="ctr" data-fr>Trajectoire ×58</span><span class="ctr" data-en>×58 trajectory</span>
+          </div>
+          <svg class="signal" viewBox="0 0 760 300" id="sig" role="img" aria-label="Trajectoire de croissance du chiffre d'affaires ICMA sur cinq exercices">
+            <defs><linearGradient id="sfade" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0%" stop-color="var(--bleu)"/><stop offset="100%" stop-color="var(--bleu)" stop-opacity="0"/>
+            </linearGradient></defs>
+            <g id="gG"></g><path id="aP" class="s-area" d=""></path><path id="lP" class="s-path" d=""></path><g id="dG"></g><g id="xG"></g>
+          </svg>
+          <div class="chart-foot" data-fr><b>Lecture :</b> une trajectoire ascendante sur cinq exercices consécutifs. Les montants reflètent la croissance passée d'une activité bâtie depuis sa base — non une projection.</div>
+          <div class="chart-foot" data-en><b>Reading:</b> an upward trajectory across five consecutive years. Figures reflect the past growth of a venture built from the ground up — not a projection.</div>
+        </div>
+      </div>
+
+      <div class="proof-inner" style="padding-top:0">
+        <div class="proof-metrics">
+          <div class="metric"><div class="v">5</div><div class="k" data-fr>exercices dirigés</div><div class="k" data-en>years at the helm</div></div>
+          <div class="metric"><div class="v">×58</div><div class="k" data-fr>trajectoire du CA</div><div class="k" data-en>revenue trajectory</div></div>
+          <div class="metric"><div class="v">3</div><div class="k" data-fr>métiers intégrés</div><div class="k" data-en>integrated disciplines</div></div>
+          <div class="metric"><div class="v">2</div><div class="k" data-fr>marchés · privé &amp; institutionnel</div><div class="k" data-en>markets · private &amp; institutional</div></div>
+        </div>
+      </div>
+    </article>
+
+    <div class="convert reveal">
+      <div class="ctxt">
+        <h4 data-fr>Ce niveau de résultat vous <em>parle</em> ?</h4>
+        <h4 data-en>Does this kind of result <em>speak to you</em>?</h4>
+        <p data-fr>Le reste du parcours suit. Mais si vous êtes déjà convaincu, l'échange peut commencer maintenant.</p>
+        <p data-en>The rest of the record follows. But if you're already convinced, the conversation can start now.</p>
+      </div>
+      <div class="cbtns">
+        <a class="btn btn-primary" href="#contact" data-fr>Me contacter
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+        <a class="btn btn-primary" href="#contact" data-en>Contact me
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+      </div>
+    </div>
+
+    <article class="proof reveal">
+      <div class="proof-inner">
+        <div class="proof-top">
+          <span class="proof-role" data-fr>Le Directeur Marketing</span><span class="proof-role" data-en>The Marketing Director</span>
+          <span class="proof-period" data-fr>The Vision · Avr. — Oct. 2025</span>
+          <span class="proof-period" data-en>The Vision · Apr — Oct 2025</span>
+        </div>
+        <h3 data-fr>Stopper la <em>fuite de valeur</em></h3>
+        <h3 data-en>Stopping <em>value leakage</em></h3>
+        <div class="sub" data-fr>Stratégie marketing 360° pilotée par les KPI · CPL · conversion · ROI</div>
+        <div class="sub" data-en>KPI-driven 360° marketing · CPL · conversion · ROI</div>
+
+        <div class="worklist">
+          <div class="work-item">
+            <div class="wi-tag" data-fr>Acquisition</div><div class="wi-tag" data-en>Acquisition</div>
+            <h5 data-fr>Marketing intégré, piloté par la donnée</h5><h5 data-en>Integrated, data-driven marketing</h5>
+            <p data-fr>Conception et déploiement d'une stratégie marketing multi-canal alignée sur la croissance commerciale. Campagnes d'acquisition centrées sur les leads qualifiés, KPI suivis en temps réel (CPL, conversion, ROI).</p>
+            <p data-en>Designed and deployed a multi-channel marketing strategy aligned with commercial growth. Acquisition campaigns focused on qualified leads, KPIs tracked in real time (CPL, conversion, ROI).</p>
+          </div>
+          <div class="work-item">
+            <div class="wi-tag" data-fr>Maîtrise du risque</div><div class="wi-tag" data-en>Risk control</div>
+            <h5 data-fr>−30% de demandes de remboursement</h5><h5 data-en>−30% refund requests</h5>
+            <p data-fr>Une demande de remboursement est un symptôme : friction, promesse non tenue. En traitant les causes plutôt que les pansements, j'ai réduit les demandes d'au moins 30% — marge préservée, confiance regagnée.</p>
+            <p data-en>A refund request is a symptom: friction, a broken promise. By addressing root causes rather than patches, I cut requests by at least 30% — margin preserved, trust rebuilt.</p>
+          </div>
+        </div>
+
+        <div class="proof-metrics">
+          <div class="metric"><div class="v">−30<span class="u">%</span></div><div class="k" data-fr>demandes de remboursement</div><div class="k" data-en>refund requests</div></div>
+          <div class="metric"><div class="v">360°</div><div class="k" data-fr>stratégie marketing</div><div class="k" data-en>marketing strategy</div></div>
+          <div class="metric"><div class="v">KPI</div><div class="k" data-fr>CPL · conversion · ROI</div><div class="k" data-en>CPL · conversion · ROI</div></div>
+        </div>
+      </div>
+    </article>
+
+    <article class="proof reveal">
+      <div class="proof-inner">
+        <div class="proof-top">
+          <span class="proof-role" data-fr>Le Redresseur</span><span class="proof-role" data-en>The Turnaround Lead</span>
+          <span class="proof-period" data-fr>Acerfi Group · Restructuration · 3 mois</span>
+          <span class="proof-period" data-en>Acerfi Group · Restructuring · 3 months</span>
+        </div>
+        <h3 data-fr>Du redressement à la <em>base solide</em></h3>
+        <h3 data-en>From recovery to a <em>solid base</em></h3>
+        <p class="desc" data-fr>En trois mois : clôture de la restructuration, <strong>création d'un système commercial</strong> structuré, réajustement à la hausse des tarifs de services. Résultat — <strong>22% de marge regagnée</strong> par rapport à la situation avant mon arrivée. Un redressement rapide, pas cosmétique.</p>
+        <p class="desc" data-en>In three months: closing the restructuring, <strong>building a structured commercial system</strong>, repricing services upward. Result — <strong>22% margin recovered</strong> versus before I arrived. A fast turnaround, not a cosmetic one.</p>
+        <div class="proof-metrics">
+          <div class="metric"><div class="v">+22<span class="u">%</span></div><div class="k" data-fr>marge regagnée</div><div class="k" data-en>margin recovered</div></div>
+          <div class="metric"><div class="v">3<span class="u" data-fr>mois</span><span class="u" data-en>mo</span></div><div class="k" data-fr>pour stabiliser</div><div class="k" data-en>to stabilise</div></div>
+          <div class="metric"><div class="v" data-fr>Système</div><div class="v" data-en>System</div><div class="k" data-fr>commercial, créé de zéro</div><div class="k" data-en>commercial, built from zero</div></div>
+        </div>
+      </div>
+    </article>
+
+    <article class="proof reveal">
+      <div class="proof-inner">
+        <div class="proof-top">
+          <span class="proof-role" data-fr>Le Consultant</span><span class="proof-role" data-en>The Consultant</span>
+          <span class="proof-period" data-fr>CEMAC · Salon PROMOTE · Mission de conseil</span>
+          <span class="proof-period" data-en>CEMAC · PROMOTE fair · Advisory</span>
+        </div>
+        <h3 data-fr>Communication digitale <em>institutionnelle</em></h3>
+        <h3 data-en>Institutional <em>digital communication</em></h3>
+        <p class="desc" data-fr>En appui-conseil pour la <strong>CEMAC</strong>, conception de la stratégie de communication digitale d'un salon régional à visibilité internationale : coordination de la production de contenus, communication multi-parties prenantes à grande échelle, et reporting de performance à destination des décideurs. La preuve que mon profil opère aussi au niveau institutionnel.</p>
+        <p class="desc" data-en>Advising the <strong>CEMAC</strong>, I designed the digital communication strategy for a regional fair with international reach: content production coordination, large-scale multi-stakeholder communication, and performance reporting for decision-makers. Proof that my profile operates at institutional level too.</p>
+        <div class="proof-metrics">
+          <div class="metric"><div class="v" data-fr>Institutionnel</div><div class="v" data-en>Institutional</div><div class="k" data-fr>niveau sous-régional</div><div class="k" data-en>sub-regional level</div></div>
+          <div class="metric"><div class="v" data-fr>Conseil</div><div class="v" data-en>Advisory</div><div class="k" data-fr>stratégie &amp; coordination</div><div class="k" data-en>strategy &amp; coordination</div></div>
+        </div>
+      </div>
+    </article>
+      <div class="ctxt">
+        <h4 data-fr>Millennium <em>Account Challenge</em></h4><h4 data-en>Millennium <em>Account Challenge</em></h4>
+        <p data-fr>Mandat stratégique obtenu pour un projet d'envergure nationale, en lien avec le MINEPAT, pour le compte du Cameroun. Un niveau de confiance qui se gagne — il ne se déclare pas.</p>
+        <p data-en>Strategic mandate secured for a national-scale project, in connection with MINEPAT, on behalf of Cameroon. A level of trust that is earned — not claimed.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="skills">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <div class="sec-num">02</div>
+      <div class="sec-head-txt">
+        <div class="sec-tag" data-fr>Expertise</div><div class="sec-tag" data-en>Expertise</div>
+        <h2 data-fr>Un profil transversal, <em>par conception</em></h2>
+        <h2 data-en>A transversal profile, <em>by design</em></h2>
+        <p data-fr>La stratégie donne la direction, le commercial génère le revenu, le terrain tient la promesse. Des compétences forgées en dirigeant, pas en observant.</p>
+        <p data-en>Strategy sets direction, commercial generates revenue, the field keeps the promise. Skills forged by leading, not by watching.</p>
+      </div>
+    </div>
+
+    <div class="creative-row reveal">
+      <div class="creative-cell">
+        <div class="cc-tag" data-fr>Marketing &amp; Branding</div><div class="cc-tag" data-en>Marketing &amp; Branding</div>
+        <h4 data-fr>La marque comme <em>système vivant</em></h4>
+        <h4 data-en>Brand as a <em>living system</em></h4>
+        <p data-fr>Conception d'identités de marque <strong>évolutives</strong>, pensées pour grandir avec l'entreprise. Chartes graphiques, positionnement, et une logique de marque qui se déploie dans le temps — comme je l'ai fait pour ICMA, de sa création à sa maturité 360°.</p>
+        <p data-en>Designing <strong>evolving</strong> brand identities, built to grow with the business. Visual systems, positioning, and a brand logic that unfolds over time — as I did for ICMA, from launch to 360° maturity.</p>
+      </div>
+      <div class="creative-cell">
+        <div class="cc-tag" data-fr>Création de contenu</div><div class="cc-tag" data-en>Content creation</div>
+        <h4 data-fr>Le contenu qui <em>sert la marque</em></h4>
+        <h4 data-en>Content that <em>serves the brand</em></h4>
+        <p data-fr>Direction et optimisation de la <strong>production vidéo et média</strong>, centrées sur la qualité et l'impact. Du reportage de salon à la production de contenu de marque — la créativité au service d'un objectif business, jamais l'inverse.</p>
+        <p data-en>Directing and optimising <strong>video and media production</strong>, focused on quality and impact. From event reporting to brand content — creativity in service of a business goal, never the reverse.</p>
+      </div>
+    </div>
+    <div class="skill-cols">
+      <div class="skill-col reveal">
+        <div class="ci">i.</div>
+        <h4 data-fr>Stratégie &amp; Opérations</h4><h4 data-en>Strategy &amp; Operations</h4>
+        <ul>
+          <li data-fr>Diagnostic &amp; audit stratégique</li><li data-en>Strategic diagnosis &amp; audit</li>
+          <li data-fr>Restructuration &amp; turnaround</li><li data-en>Restructuring &amp; turnaround</li>
+          <li data-fr>Pilotage par la donnée (KPI, reporting)</li><li data-en>Data-driven steering (KPIs, reporting)</li>
+          <li data-fr>Go-to-market &amp; positionnement</li><li data-en>Go-to-market &amp; positioning</li>
+          <li data-fr>Cadre OHADA</li><li data-en>OHADA framework</li>
+        </ul>
+      </div>
+      <div class="skill-col reveal">
+        <div class="ci">ii.</div>
+        <h4 data-fr>Développement Commercial</h4><h4 data-en>Business Development</h4>
+        <ul>
+          <li data-fr>Conception de systèmes commerciaux</li><li data-en>Commercial system design</li>
+          <li data-fr>Tunnel de conversion · ICP · BANT</li><li data-en>Conversion funnel · ICP · BANT</li>
+          <li data-fr>Pricing &amp; gestion de la marge</li><li data-en>Pricing &amp; margin management</li>
+          <li data-fr>Cross-sell inter-entités</li><li data-en>Cross-entity cross-sell</li>
+          <li data-fr>Scoring &amp; qualification de comptes</li><li data-en>Account scoring &amp; qualification</li>
+        </ul>
+      </div>
+      <div class="skill-col reveal">
+        <div class="ci">iii.</div>
+        <h4 data-fr>Pilotage Terrain &amp; Leadership</h4><h4 data-en>Field Leadership &amp; Delivery</h4>
+        <ul>
+          <li data-fr>Gestion de projet développée sur le terrain</li><li data-en>Field-tested project management</li>
+          <li data-fr>Communication de crise</li><li data-en>Crisis communication</li>
+          <li data-fr>Management de direction (P&amp;L)</li><li data-en>Executive management (P&amp;L)</li>
+          <li data-fr>Conduite du changement</li><li data-en>Change management</li>
+          <li data-fr>Activation événementielle &amp; production média</li><li data-en>Event activation &amp; media production</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="contact" id="contact">
+  <div class="wrap reveal">
+    <div class="ce" data-fr>Prochaine étape</div><div class="ce" data-en>Next step</div>
+    <h2 data-fr>Donnez-moi un problème.<br>Je vous rends une <em>trajectoire</em>.</h2>
+    <h2 data-en>Give me a problem.<br>I'll hand back a <em>trajectory</em>.</h2>
+    <p data-fr>C'est la promesse que sept ans de stratégie, de terrain et de résultats m'ont appris à tenir. Le reste, parlons-en.</p>
+    <p data-en>That's the promise seven years of strategy, fieldwork and results have taught me to keep. The rest, let's talk.</p>
+    <div class="contact-cta">
+      <a class="btn btn-primary" href="mailto:messiafdal@gmail.com?subject=Contact%20via%20portfolio%20%E2%80%94%20%C3%A9change%20professionnel">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="1"/><path d="m22 7-10 6L2 7"/></svg>Email</a>
+      <a class="btn btn-ghost" href="https://wa.me/237691006569" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 00-8.5 15.2L2 22l4.9-1.3A10 10 0 1012 2zm0 18a8 8 0 01-4.1-1.1l-.3-.2-2.9.8.8-2.8-.2-.3A8 8 0 1112 20zm4.4-6c-.2-.1-1.4-.7-1.6-.8-.2-.1-.4-.1-.5.1-.2.2-.6.8-.7.9-.1.2-.3.2-.5.1-.7-.3-1.3-.6-1.9-1.5-.1-.2 0-.3.1-.4l.3-.4.2-.3v-.4c0-.1-.5-1.3-.7-1.7-.2-.4-.4-.4-.5-.4h-.5c-.2 0-.4.1-.6.3-.2.2-.8.8-.8 1.9 0 1.1.8 2.2.9 2.3.1.2 1.6 2.5 4 3.4 1.4.6 2 .7 2.6.6.4-.1 1.4-.6 1.6-1.1.2-.5.2-1 .1-1.1l-.4-.4z"/></svg>WhatsApp</a>
+      <a class="btn btn-ghost" href="https://www.linkedin.com/in/afdal-messi-moluh-6a3084120/" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M4.98 3.5a2.5 2.5 0 11-.02 5 2.5 2.5 0 01.02-5zM3 9h4v12H3zM9 9h3.8v1.7h.05c.53-1 1.83-2.05 3.77-2.05 4.03 0 4.78 2.65 4.78 6.1V21h-4v-5.4c0-1.3-.02-2.96-1.8-2.96-1.8 0-2.08 1.4-2.08 2.86V21H9z"/></svg>LinkedIn</a>
+      <a class="btn btn-ghost" href="CV-Messi-Afdal.pdf" download>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3v12m0 0l-4-4m4 4l4-4M4 17v2a2 2 0 002 2h12a2 2 0 002-2v-2"/></svg>
+        <span data-fr>Le CV</span><span data-en>The CV</span></a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="sig"><b>Messi Afdal .M</b> — Performance-Driven Manager &amp; Solution Driver</div>
+    <div class="sig">Yaoundé · Cameroun · MMXXVI</div>
+  </div>
+</footer>
+
+<script>
+function setLang(l){
+  document.body.classList.toggle('en', l==='en');
+  document.documentElement.lang=l;
+  document.getElementById('btn-fr').classList.toggle('active', l==='fr');
+  document.getElementById('btn-en').classList.toggle('active', l==='en');
+}
+addEventListener('scroll',()=>{document.getElementById('topbar').classList.toggle('scrolled',scrollY>40)});
+
+(function(){
+  const data=[{y:'Ex.1',v:200000},{y:'Ex.2',v:1720000},{y:'Ex.3',v:2028000},{y:'Ex.4',v:5372500},{y:'Ex.5',v:11645900}];
+  const W=760,H=300,padL=54,padR=22,pT=24,pB=42,maxV=12000000;
+  const x=i=>padL+i*(W-padL-padR)/(data.length-1);
+  const y=v=>pT+(1-v/maxV)*(H-pT-pB);
+  const NS='http://www.w3.org/2000/svg';
+  const gG=document.getElementById('gG'),xG=document.getElementById('xG'),dG=document.getElementById('dG');
+  [0,3000000,6000000,9000000,12000000].forEach(t=>{
+    const yy=y(t);
+    const ln=document.createElementNS(NS,'line');ln.setAttribute('class','s-grid');
+    ln.setAttribute('x1',padL);ln.setAttribute('x2',W-padR);ln.setAttribute('y1',yy);ln.setAttribute('y2',yy);gG.appendChild(ln);
+    const tx=document.createElementNS(NS,'text');tx.setAttribute('class','s-lab');tx.setAttribute('x',padL-9);
+    tx.setAttribute('y',yy+3);tx.setAttribute('text-anchor','end');tx.textContent=(t/1000000)+'M';gG.appendChild(tx);
+  });
+  data.forEach((d,i)=>{
+    const tx=document.createElementNS(NS,'text');tx.setAttribute('class','s-lab');tx.setAttribute('x',x(i));
+    tx.setAttribute('y',H-pB+22);tx.setAttribute('text-anchor','middle');tx.textContent=d.y;xG.appendChild(tx);
+  });
+  let dP='M '+x(0)+' '+y(data[0].v);
+  for(let i=1;i<data.length;i++){const cx=(x(i-1)+x(i))/2;dP+=' C '+cx+' '+y(data[i-1].v)+' '+cx+' '+y(data[i].v)+' '+x(i)+' '+y(data[i].v);}
+  const lP=document.getElementById('lP');lP.setAttribute('d',dP);
+  const len=lP.getTotalLength();lP.style.strokeDasharray=len;lP.style.strokeDashoffset=len;lP.style.transition='stroke-dashoffset 2.2s cubic-bezier(.3,.7,.2,1)';
+  const aP=document.getElementById('aP');aP.setAttribute('d',dP+' L '+x(data.length-1)+' '+y(0)+' L '+x(0)+' '+y(0)+' Z');aP.style.opacity=0;aP.style.transition='opacity 1.4s ease .9s';
+  data.forEach((d,i)=>{
+    const last=i===data.length-1;
+    const c=document.createElementNS(NS,'circle');c.setAttribute('class',last?'s-dot-last':'s-dot');
+    c.setAttribute('cx',x(i));c.setAttribute('cy',y(d.v));c.setAttribute('r',last?6:4);
+    c.style.opacity=0;c.style.transition='opacity .4s ease '+(0.7+i*0.3)+'s';dG.appendChild(c);
+    const tv=document.createElementNS(NS,'text');tv.setAttribute('class',last?'s-val s-val-last':'s-val');
+    tv.setAttribute('x',x(i));tv.setAttribute('y',y(d.v)-(last?16:13));tv.setAttribute('text-anchor',i===0?'start':'middle');
+    tv.textContent=(d.v/1000000).toFixed(d.v<1000000?2:1).replace('.',',')+'M';
+    tv.style.opacity=0;tv.style.transition='opacity .4s ease '+(0.9+i*0.3)+'s';dG.appendChild(tv);
+  });
+  const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){
+    lP.style.strokeDashoffset=0;aP.style.opacity=.2;dG.querySelectorAll('circle,text').forEach(el=>el.style.opacity=1);io.disconnect();
+  }}),{threshold:.35});
+  io.observe(document.getElementById('sig'));
+})();
+
+const rio=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');rio.unobserve(e.target);}}),{threshold:.15});
+document.querySelectorAll('.reveal').forEach(el=>rio.observe(el));
+addEventListener('load',()=>setTimeout(()=>{
+  document.querySelectorAll('.reveal:not(.in)').forEach(el=>{
+    if(el.getBoundingClientRect().top<innerHeight*1.4) el.classList.add('in');
+  });
+},400));
+</script>
+</body>
+</html>
